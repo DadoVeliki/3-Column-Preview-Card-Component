@@ -1,0 +1,102 @@
+/*DESKTOP DESIGN
+*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+    background-color: hsl(0, 0%, 95%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width:60%;
+    height: 60vh;
+    
+}
+.sedans{
+    width:33.33%;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:5%;
+}
+.suvs{
+    width:33.33%;
+    background-color:hsl(184, 100%, 22%);
+    padding:5%;
+}
+.luxury{
+    padding:5%;
+    width:33.33%;
+    background-color:hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+}
+h1{
+    font-size: 35pt;
+    color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+button{
+    width:70%;
+    height: 11%;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    border:none;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+.gumb1{
+    color: hsl(31, 77%, 52%);
+}
+.gumb2{
+    color:hsl(184, 100%, 22%);
+}
+.gumb3{
+    color:hsl(179, 100%, 13%);
+}
+
+/*ACTIVE STATES
+*/
+button:hover{
+    border-color:white;
+    border-style: solid;
+    border-width: 2px;
+    color:hsl(0, 0%, 95%);
+    background: none;
+    cursor: pointer;
+    
+}
+
+/*RESPONSIVE
+*/
+@media screen and (max-width:600px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .sedans{
+        width:90%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    .suvs{
+        width:90%;
+    }
+    .luxury{
+        width:90%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+    button{
+        width:50%;
+    }
+}
